@@ -1,8 +1,8 @@
 <script>
-import { injectAnalytics } from '@vercel/analytics/sveltekit'
-import { createClient } from '@supabase/supabase-js';
+    import { injectAnalytics } from '@vercel/analytics/sveltekit'
+    import { createClient } from '@supabase/supabase-js';
 
-injectAnalytics({ mode: dev ? 'development' : 'production' });
+    injectAnalytics();
 
   const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
   const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
